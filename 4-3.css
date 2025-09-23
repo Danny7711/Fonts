@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  margin: 30px 0 15px;
+}
+
+.block {
+  display: block;
+  background: lightblue;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.inline {
+  display: inline;
+  background: lightgreen;
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+  background: lightcoral;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.item {
+  background: #ddd;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #999;
+}
+
+/* Задание 3 */
+.direction {
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 200px;
+}
+
+/* Задание 4 */
+.align {
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  border: 1px dashed #333;
+}
+
+/* Задание 5 */
+.grow1 {
+  flex: 1 1 100px;
+  background: lightblue;
+}
+.grow2 {
+  flex: 2 1 100px;
+  background: lightgreen;
+}
+.grow3 {
+  flex: 1 2 100px;
+  background: lightcoral;
+}
+
+/* Задание 6 */
+.practice1 {
+  flex: 0 0 50%;
+  background: lightblue;
+}
+.practice2 {
+  flex: 1;
+  background: lightgreen;
+}
+.practice3 {
+  flex: 0 0 100px;
+  background: lightcoral;
+}
+
+/* Задание 7 */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background: #333;
+  padding: 10px;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Задание 8 */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.card {
+  flex: 1 1 calc(33.333% - 15px);
+  background: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #aaa;
+}
