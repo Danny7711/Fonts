@@ -1,117 +1,215 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* === Общие стили === */
 body {
   font-family: Arial, sans-serif;
-  padding: 20px;
+  margin: 20px;
+  background: #fafafa;
+  color: #333;
 }
 
 h1 {
-  margin: 30px 0 15px;
+  margin-top: 40px;
 }
 
+/* === Задание 1 === */
 .block {
   display: block;
-  background: lightblue;
-  margin-bottom: 10px;
+  background: lightcoral;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 .inline {
   display: inline;
-  background: lightgreen;
-  padding: 10px;
+  background: lightblue;
+  padding: 5px;
 }
 
 .flex {
   display: flex;
-  background: lightcoral;
+  background: lightgreen;
   padding: 10px;
   margin-top: 10px;
 }
 
+/* === Задание 2 === */
 .container {
   display: flex;
   gap: 10px;
-  margin: 10px 0;
+  margin-bottom: 20px;
 }
 
 .item {
   background: #ddd;
   padding: 20px;
+  border-radius: 8px;
+  flex: 1;
   text-align: center;
-  border: 1px solid #999;
 }
 
-/* Задание 3 */
+/* === Задание 3 === */
 .direction {
-  flex-direction: column;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
-  height: 200px;
 }
 
-/* Задание 4 */
+/* === Задание 4 === */
 .align {
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 150px;
-  border: 1px dashed #333;
+  height: 100px;
 }
 
-/* Задание 5 */
+/* === Задание 5 === */
 .grow1 {
-  flex: 1 1 100px;
-  background: lightblue;
+  flex-grow: 1;
 }
 .grow2 {
-  flex: 2 1 100px;
-  background: lightgreen;
+  flex-grow: 2;
 }
 .grow3 {
-  flex: 1 2 100px;
-  background: lightcoral;
+  flex-grow: 3;
 }
 
-/* Задание 6 */
+/* === Задание 6 === */
 .practice1 {
-  flex: 0 0 50%;
-  background: lightblue;
+  flex-basis: 50%;
 }
 .practice2 {
-  flex: 1;
-  background: lightgreen;
+  flex-grow: 1;
 }
 .practice3 {
-  flex: 0 0 100px;
-  background: lightcoral;
+  flex-basis: 100px;
 }
 
-/* Задание 7 */
+/* === Задание 7 === */
 .menu {
   display: flex;
-  justify-content: center;
-  gap: 30px;
-  background: #333;
-  padding: 10px;
+  gap: 20px;
+  background: #222;
+  padding: 10px 20px;
+  border-radius: 8px;
 }
+
 .menu a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
 }
 
-/* Задание 8 */
+/* === Задание 8 === */
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 10px;
 }
+
 .card {
-  flex: 1 1 calc(33.333% - 15px);
+  flex: 1 1 calc(33% - 20px);
   background: #f0f0f0;
   padding: 20px;
-  border: 1px solid #aaa;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* === Задание 9: Latest Episodes === */
+.episodes {
+  background-color: #0d0d0d;
+  color: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  margin-top: 40px;
+  font-family: 'Inter', sans-serif;
+}
+
+.episodes .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.episodes h2 {
+  font-size: 2rem;
+}
+
+.view-all {
+  background-color: #00aaff;
+  border: none;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.episode-card {
+  display: flex;
+  background-color: #111;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.episode-card img {
+  width: 40%;
+  object-fit: cover;
+}
+
+.episode-card .content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tag {
+  background: #222;
+  color: #aaa;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  width: fit-content;
+}
+
+.episode {
+  color: #00aaff;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.episode-card h3 {
+  font-size: 1.4rem;
+  margin: 8px 0 10px;
+}
+
+.episode-card p {
+  color: #ccc;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.details {
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  margin-top: 15px;
+  width: fit-content;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.details:hover {
+  background-color: #008ecc;
+}
+
+@media (max-width: 700px) {
+  .episode-card {
+    flex-direction: column;
+  }
+
+  .episode-card img {
+    width: 100%;
+  }
 }
