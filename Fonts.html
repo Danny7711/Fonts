@@ -1,11 +1,170 @@
+```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Google Fonts</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f4f4f4;
+            color: #333;
+            font-family: "Open Sans", Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-family: "Roboto", Arial, Helvetica, sans-serif;
+            font-size: 44px;
+            font-weight: 700;
+            text-align: center;
+            color: #222;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-family: "Montserrat", "Roboto", Arial, sans-serif;
+            font-size: 28px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-family: "Open Sans", Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            margin-bottom: 18px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            padding: 25px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .example-title {
+            font-family: "Montserrat", "Roboto", Arial, sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .alternative {
+            font-family: "Roboto", Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <div class="container">
+
+        <h1>Использование нескольких шрифтов</h1>
+
+        <div class="section">
+
+            <h2>Задание 1 — Google Fonts</h2>
+
+            <p>
+                Для заголовков данной страницы используется
+                шрифт Roboto, который подключён с помощью
+                Google Fonts.
+            </p>
+
+            <p>
+                Для основного текста используется шрифт
+                Open Sans, также загруженный с Google Fonts.
+            </p>
+
+            <p>
+                Благодаря подключению нескольких шрифтов
+                можно использовать разные стили для
+                заголовков и основного текста.
+            </p>
+
+        </div>
+
+        <div class="section">
+
+            <h2>Задание 2 — Альтернативные шрифты</h2>
+
+            <p class="alternative">
+                В CSS можно указать несколько шрифтов
+                через запятую. Если первый шрифт недоступен,
+                браузер автоматически попробует следующий.
+            </p>
+
+            <p>
+                Например:
+                Roboto, Arial, Helvetica, sans-serif.
+                В первую очередь будет использоваться Roboto.
+                Если он недоступен, будет выбран Arial.
+            </p>
+
+        </div>
+
+        <div class="section">
+
+            <h2 class="example-title">
+                Montserrat — дополнительный шрифт
+            </h2>
+
+            <p>
+                Этот заголовок использует Montserrat,
+                а текст написан с использованием Open Sans.
+                Оба шрифта подключены с помощью Google Fonts.
+            </p>
+
+        </div>
+
+        <div class="section">
+
+            <h2>Итог</h2>
+
+            <p>
+                В данной работе были использованы три
+                шрифта Google Fonts: Roboto, Open Sans
+                и Montserrat.
+            </p>
+
+            <p>
+                Также были указаны альтернативные шрифты
+                через запятую. Это позволяет странице
+                корректно отображать текст даже в случае,
+                если основной шрифт недоступен.
+            </p>
+
+        </div>
+
+    </div>
+
 </body>
 </html>
+```
